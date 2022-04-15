@@ -1,0 +1,55 @@
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ git clone --branch latest-stable https://github.com/root-project/root.git root_src
+fatal: destination path 'root_src' already exists and is not an empty directory.
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ git --version
+git version 2.35.3.windows.1
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ^C
+
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir /s /q root_src
+rmdir: failed to remove '/s': No such file or directory
+rmdir: failed to remove '/q': No such file or directory
+rmdir: failed to remove 'root_src': Directory not empty
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ pwd
+/c/Users/INS 5310
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir /s /q root_src
+rmdir: failed to remove '/s': No such file or directory
+rmdir: failed to remove '/q': No such file or directory
+rmdir: failed to remove 'root_src': Directory not empty
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ git clone --branch latest-stable https://github.com/root-project/root.git root_src
+fatal: destination path 'root_src' already exists and is not an empty directory.
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir root_src
+rmdir: failed to remove 'root_src': Directory not empty
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir /S root_src
+rmdir: failed to remove '/S': No such file or directory
+rmdir: failed to remove 'root_src': Directory not empty
+
+INS 5310@DESKTOP-EBFP546 MINGW64 ~
+$ rmdir /S /Q root_src
+rmdir: failed to remove '/S': No such file or directory
+rmdir: failed to remove '/Q': No such file or directory
+rmdir: failed to remove 'root_src': Directory not empty
+
